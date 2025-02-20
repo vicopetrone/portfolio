@@ -74,6 +74,8 @@ h1, p, h2, h3, a{
     font-family: "Gabarito", serif;
 }
 
+
+
 /*       HEADER      */
 header{
     padding: 1.2em;
@@ -373,6 +375,12 @@ input{
     grid-row: span 1;
 }
 
+#mono{
+    display: flex;
+    justify-content: center;
+    margin: 0px 150px;
+}
+
 #elmato{
     position: relative;
     max-width: 1400px;
@@ -401,10 +409,112 @@ footer article {
 
 /*       RESPONSIVA      */
 
-/* media para tablet */
-@media all and (max-width:1024px){
+/* MEDIA QUERY PARA TABLET MEJORADA */
+@media all and (max-width:1024px) {
+    /* Ajustes generales */
+    body {
+        font-size: 16px;
+    }
 
+    /* HEADER */
+    header img {
+        width: 50%;
+    }
+    
+    /* Carrusel */
+    .carousel {
+        height: 50vh;
+    }
+
+    /* Minian */
+    #minian {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        margin: 40px 50px;
+    }
+
+    #minian article {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    /* Afiche */
+    #afiche {
+        height: auto;
+   display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        margin: 40px 50px;
+    }
+
+    #afiche article img {
+        width: 100%;
+    }
+
+    #afiche article:nth-of-type(1){
+        grid-row: span 2;
+    }
+    #afiche article:nth-of-type(2){
+    grid-row: span 2;
+    }
+
+    #afiche article:nth-of-type(3){
+        grid-row: span 1;
+    }
+
+
+    /* ECO */
+    #eco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 50px;
+    }
+    
+    #eco article {
+        width: 100%;
+        position: relative;
+        top: 150px;
+    }
+
+
+    /* Tipografía */
+    input {
+        font-size: 200px;
+        width: 100%;
+        height: auto;
+    }
+
+    #ejemplos article{
+        display: none;
+    }
+
+    /* Técnicas */
+    #tecnicas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    #tecnicas article {
+        width: 45%;
+    }
+
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 20px;
+    }
 }
+
 
 
 
