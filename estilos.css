@@ -376,10 +376,11 @@ input{
     margin: auto;
     overflow: hidden;
     height: 70vh;
+    margin-top: 20px;
 }
 
 footer{
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: center;
     background-image: url(imagenes/azulejosblancospng.png);
     color: rgb(18, 55, 106);
@@ -394,16 +395,85 @@ footer article {
     margin-top: 10px;
 }
 
+
+.monografia {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.monografia-images {
+    display: flex;
+    width: 70%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.monografia-images img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active { background: black; }
+
+
+
+
+
 /*       RESPONSIVA      */
 
 /* media para tablet */
-@media all and (min-width:768px){
+@media all and (max-width:1024px){
 
 }
 
 
 
 /* media para mobile */
-@media all and (min-width:375px){
+@media all and (max-width:768px){
+    #minian{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin: 40px 50px 0px 50px;
+    }
     
+    #minian article:nth-of-type(1){
+        grid-column: span 1;
+        grid-row: span 4;
+        transform: scale(1);
+    }
+    #minian h1, p{
+        font-size: 70%;
+    }
 }
