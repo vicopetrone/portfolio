@@ -91,6 +91,9 @@ header a img{
     margin: 0px 24px;
 }
 
+#indice{
+    display: none;
+}
 
 /*       CARRUSEL       */
 
@@ -461,6 +464,32 @@ footer article {
 
 /* media para mobile */
 @media all and (max-width:768px){
+
+    /*       HEADER      */
+header{
+    padding: 1.2em;
+    text-align: center;
+}
+
+header img{
+    width: 70%;
+    align-content: center;
+    justify-items: center;
+}
+
+header a{
+    display: none;
+}
+
+#indice{
+    display: block;
+
+}
+
+#indice a img{
+    width: 60px;
+    margin: 20px 30px;
+}
 
     /* revista mobile */
     .carousel {
