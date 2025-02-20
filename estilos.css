@@ -397,6 +397,11 @@ input{
     margin-top: 20px;
 }
 
+#elmato video{
+    width: 100vh;
+    height: 60vh;
+}
+
 footer{
     margin-top: 10px;
     justify-content: center;
@@ -607,17 +612,22 @@ display: none;
     position: relative;
     margin: auto;
     overflow: hidden;
-    height: 30vh;
-    width: 33vh;
+    height: 20vh;
+    width: 35vh;
     margin-top: 20px;
     display: flex;
     justify-content: center;
 
 }
 
+#elmato video{
+    width: 50vh;
+    height: 20vh;
+}
+
 
 footer{
-    margin-top: 10px;
+    margin-top: 30px;
     justify-content: center;
     background-image: url(imagenes/azulejosblancospng.png);
     color: rgb(18, 55, 106);
