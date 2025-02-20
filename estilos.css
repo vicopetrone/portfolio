@@ -328,6 +328,9 @@ input{
     font-family: 'MiFuente';
 }
 
+#tipoinfo{
+    display: none;
+}
 
 /*       TECNICAS       */
 #tecnicas{
@@ -373,6 +376,10 @@ input{
 #tecnicas article:nth-of-type(5){
     grid-column: span 1;
     grid-row: span 1;
+}
+
+#tecnicasinfo{
+    display: none;
 }
 
 #mono{
@@ -557,7 +564,7 @@ display: none;
     margin: 20px 50px 40px 50px;
 }
 
-#tecnicas img{
+#tecnicas div img{
     width: 88%;
     height: 95%;
 }
@@ -573,6 +580,24 @@ display: none;
 display: none;
 }
 
+#tecnicasinfo{
+    display: block;
+    margin: 20px 50px 40px 50px;
+}
+#tecnicasinfo h2{
+    color: palevioletred;
+}
+
+
+
+#tipoinfo{
+    display: block;
+    margin: 20px 50px 40px 50px;
+}
+#tipoinfo h2{
+    color: rebeccapurple;
+}
+
 #mono{
     margin: 20px 50px 40px 50px;
 }
@@ -580,10 +605,10 @@ display: none;
 
 #elmato{
     position: relative;
-    max-width: 768px;
     margin: auto;
     overflow: hidden;
     height: 30vh;
+    width: 33vh;
     margin-top: 20px;
     display: flex;
     justify-content: center;
