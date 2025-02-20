@@ -422,14 +422,169 @@ footer article {
 /*       RESPONSIVA      */
 
 /* MEDIA QUERY PARA TABLET MEJORADA */
-@media all and (max-width:1024px) {
+@media all and (max-width:1023px){
+    header{
+        padding: 1.2em;
+        text-align: center;
+    }
+    
+    header img{
+        width: 50%;
+        align-content: center;
+        justify-items: center;
+    }
+    
+    header a {display: none;
+}
 
-  
+    #indice {display: block;}
+
+    input {display: none;} 
+        
+    #indice a img{
+        width: 60px;
+        margin: 20px 30px;
+    }
+
+
+ /* revista mobile */
+ .carousel {
+    height: 40vh;
+}
+
+.prev, .next {
+    top: 50%;
+}
+
+.dots {
+    margin-top: 10px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+}
+
+    /* minian tablet */
+    #minian{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin: 40px 50px 0px 50px;
+    }
+    
+    #minian article:nth-of-type(1){
+        grid-column: span 1;
+        grid-row: span 4;
+        transform: scale(1);
+    }
+
+        /* afiche tablet */
+
+    #afiche{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        margin: 40px 50px 0px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #afiche article:nth-of-type(1){
+        order: 3;
+        width: 100%;
+        height: 500%;
+    }
+   
+    #afiche article:nth-of-type(2){
+        width: 100%;
+        height: 600%;
+    }
+
+    #afiche article:nth-of-type(3){
+        padding: 60px 0px;
+    }
+    
+    .texto{
+        font-size: 80%;
+    }
+
+    /* ECO tablet */
+    #eco{
+        height: 20vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(1,1fr);
+        margin: 20px 50px 20px 50px;
+    }
+                
+    #eco article:nth-of-type(3){display: none;}
+    
+    /*       TECNICAS       */
+#tecnicas{
+    height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 20px 50px 40px 50px;
+}
+
+#tecnicas div img{
+    width: 88%;
+    height: 95%;
+}
+
+#tecnicas article{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#tecnicas article:nth-of-type(3) {display: none;}
+
+
+#mono{margin: 20px 60px 40px 60px;}
+
+#elmato{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 30vh;
+    width: 80vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+#elmato video{
+    width: 100vh;
+    height: 30vh;
+}
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media para mobile */
-@media all and (max-width:768px){
+@media all and (max-width:767px){
 
     /*       HEADER      */
 header{
@@ -457,7 +612,7 @@ header a{
     margin: 20px 30px;
 }
 
-    /* revista mobile */
+ /* revista mobile */
     .carousel {
         max-width: 768px;
         height: 25vh;
@@ -468,7 +623,7 @@ header a{
     }
     
     .dots {
-        margin-top: 0px;
+        margin-top: 5px;
     }
     
     .dot {
@@ -478,61 +633,27 @@ header a{
     
 
     /* minian mobile */
-    #minian{
-        height: 60vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        margin: 40px 50px 0px 50px;
-    }
-    
-    #minian article:nth-of-type(1){
-        grid-column: span 1;
-        grid-row: span 4;
-        transform: scale(1);
+    #minian {height: 60vh;}
+
+    #afiche{
+        height: 70vh;
     }
 
+    #afiche article:nth-of-type(2){
+        width: 100%;
+        height: 60%;
+    }
 
-        /* afiche mobile */
+    /* afiche mobile */
+    #afiche article:nth-of-type(1){ height: 30%;}
 
-        #afiche{
-            height: 70vh;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4,1fr);
-            margin: 40px 50px 0px 50px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #afiche article:nth-of-type(1){
-            order: 3;
-            width: 100%;
-            height: 30%;
-        }
-        #afiche article:nth-of-type(3){
-            padding: 40px 0px;
-        }
-        
-        .texto{
-            font-size: 80%;
-        }
+    /* ECO mobile */
+     #eco{grid-template-columns: repeat(1, 1fr);}
 
-        /* ECO mobile */
-        #eco{
-            height: 20vh;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1,1fr);
-            margin: 20px 50px 20px 50px;
-            }
-            
-            #eco article:nth-of-type(2){
-                display: none;
-            }
-            #eco article:nth-of-type(3){
-                display: none;
-            }
+    #eco article:nth-of-type(2){display: none;}
+                
+
+
 
             /*       TIPOGRAFIA       */
 input{
@@ -603,21 +724,12 @@ display: none;
     color: rebeccapurple;
 }
 
-#mono{
-    margin: 20px 50px 40px 50px;
-}
+#mono{ margin: 20px 50px 40px 50px;}
 
 
 #elmato{
-    position: relative;
-    margin: auto;
-    overflow: hidden;
     height: 20vh;
     width: 35vh;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-
 }
 
 #elmato video{
@@ -638,20 +750,11 @@ footer{
     align-content: center;
 }
 
-footer article {
-    margin-top: 10px;
-}
+footer article {margin-top: 10px;}
 
-footer h1{
-    font-size: 98%;
-}
-footer p{
-    font-size: 80%;
-}
+footer h1{ font-size: 98%;}
+footer p {font-size: 80%;}
 
-footer a{
-    font-size: 90%;
-}
-
+footer a {font-size: 90%;}
 
 }
