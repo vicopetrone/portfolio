@@ -461,7 +461,10 @@ footer article {
 
 /* media para mobile */
 @media all and (max-width:768px){
+
+    /* minian mobile */
     #minian{
+        height: 60vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4,1fr);
@@ -473,7 +476,60 @@ footer article {
         grid-row: span 4;
         transform: scale(1);
     }
+
     #minian h1, p{
         font-size: 70%;
     }
+
+        /* afiche mobile */
+
+        #afiche{
+            height: 60vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            margin: 40px 50px 0px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #afiche img{
+            width: 95%;
+            height: 95%;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        #afiche article{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #afiche article:nth-of-type(1){
+            grid-column: span 2;
+            grid-row: span 2;
+            order: 3;
+        }
+        #afiche article:nth-of-type(2){
+            grid-column: span 1;
+            grid-row: span 3;
+        
+        }
+        #afiche article:nth-of-type(3){
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        
+        #afiche h2{
+            color: brown;
+        }
+        
+        .texto{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
 }
