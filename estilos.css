@@ -415,14 +415,12 @@ footer{
     align-content: center;
 }
 
-footer article {
-    margin-top: 10px;
-}
+footer article {margin-top: 10px;}
 
 
 /*       RESPONSIVA      */
 
-/* MEDIA QUERY PARA TABLET MEJORADA */
+/* TABLET */
 @media all and (max-width:1023px){
     header{
         padding: 1.2em;
@@ -446,119 +444,111 @@ footer article {
     }
 
 
- /* revista mobile */
- .carousel {
-    height: 40vh;
-}
+ /* REVISTA  */
+ .carousel {height: 40vh;}
 
-.prev, .next {
-    top: 50%;
-}
+.prev, .next {top: 50%;}
 
-.dots {
-    margin-top: 10px;
-}
+.dots {margin-top: 10px;}
 
 .dot {
     width: 9px;
     height: 9px;
 }
 
-    /* minian tablet */
-    #minian{
-        height: 80vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        margin: 40px 50px 0px 50px;
-    }
+/* MINIAN  */
+#minian{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: 40px 50px 0px 50px;
+}
     
-    #minian article:nth-of-type(1){
-        grid-column: span 1;
-        grid-row: span 4;
-        transform: scale(1);
-    }
+#minian article:nth-of-type(1){
+    grid-column: span 1;
+    grid-row: span 4;
+    transform: scale(1);
+}
 
-        /* afiche tablet */
+/* AFICHE  */
 
-    #afiche{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        margin: 40px 50px 0px 50px;
-        display: flex;
-        flex-direction: column;
-    }
+#afiche{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: 40px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+}
     
-    #afiche article:nth-of-type(1){
-        order: 3;
-        width: 100%;
-        height: 500%;
-    }
+#afiche article:nth-of-type(1){
+    order: 3;
+    width: 100%;
+    height: 500%;
+}
    
-    #afiche article:nth-of-type(2){
-        width: 100%;
-        height: 600%;
-    }
+#afiche article:nth-of-type(2){
+    width: 100%;
+    height: 600%;
+}
 
-    #afiche article:nth-of-type(3){
-        padding: 60px 0px;
-    }
+#afiche article:nth-of-type(3){
+    padding: 60px 0px;
+}
     
-    .texto{
-        font-size: 80%;
-    }
+.texto{
+    font-size: 80%;
+}
 
-    /* ECO tablet */
-    #eco{
-        height: 20vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(1,1fr);
-        margin: 20px 50px 20px 50px;
-    }
+/* ECO  */
+#eco{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin: 20px 50px 20px 50px;
+}
                 
-    #eco article:nth-of-type(3){display: none;}
+#eco article:nth-of-type(3){display: none;}
 
-            /*       TIPOGRAFIA       */
-            input{
-                display: none;
-                }
+/*       TIPOGRAFIA       */
+input{display: none;}
                 
-                #ejemplos{
-                    margin-top: 30px;
-                    height: 50vh;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    align-items: center;
-                    margin: 20px 60px 0px 60px;
-                }
+#ejemplos{
+    margin-top: 30px;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    margin: 20px 60px 0px 60px;
+}
                 
-                #ejemplos article img{
-                    width: 100%;
-                    height: 100%;
-                }
+#ejemplos article img{
+    width: 100%;
+    height: 100%;
+}
                 
-                #ejemplos article:nth-of-type(1){
-                    grid-column: span 1;
-                    grid-row: span 2;
-                }
-                #ejemplos article:nth-of-type(2){
-                    grid-column: span 1;
-                    grid-row: span 2;
-                }
+#ejemplos article:nth-of-type(1){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+#ejemplos article:nth-of-type(2){
+    grid-column: span 1;
+    grid-row: span 2;
+}
 
-                #ejemplos h1{ font-size: 80%;}
-                #ejemplos h2{ font-size: 80%;}
-                #ejemplos h3{ font-size: 80%;}
-                #ejemplos p{ font-size: 80%;}
+#ejemplos h1{ font-size: 80%;}
+#ejemplos h2{ font-size: 80%;}
+#ejemplos h3{ font-size: 80%;}
+#ejemplos p{ font-size: 80%;}
                 
 
 
     
-    /*       TECNICAS       */
+/*       TECNICAS       */
 #tecnicas{
     height: 80vh;
     grid-template-columns: repeat(2, 1fr);
@@ -580,9 +570,10 @@ footer article {
 
 #tecnicas article:nth-of-type(3) {display: none;}
 
-
+    /*       MONOGRAFIA      */
 #mono{margin: 20px 60px 40px 60px;}
 
+    /*       ELMATO      */
 #elmato{
     position: relative;
     margin: auto;
@@ -599,6 +590,7 @@ footer article {
     height: 30vh;
 }
 
+    /*       FOOTER      */
 footer{
     margin-top: 30px;
     justify-content: center;
@@ -620,7 +612,7 @@ footer a {font-size: 90%;}
 
 
 
-/* media para mobile */
+/*  MOBILE  */
 @media all and (max-width:767px){
 
     /*       HEADER      */
@@ -635,67 +627,54 @@ header img{
     justify-items: center;
 }
 
-header a{
-    display: none;
-}
+header a{ display: none;}
 
-#indice{
-    display: block;
-
-}
+#indice{display: block;}
 
 #indice a img{
     width: 60px;
     margin: 20px 30px;
 }
 
- /* revista mobile */
-    .carousel {
-        max-width: 768px;
-        height: 25vh;
-    }
+ /* REVISTA */
+.carousel {
+    max-width: 768px;
+    height: 25vh;
+}
     
-    .prev, .next {
-        top: 40%;
-    }
+.prev, .next {top: 40%;}
     
-    .dots {
-        margin-top: 5px;
-    }
+.dots { margin-top: 5px;}
     
-    .dot {
-        width: 8px;
-        height: 8px;
-    }
-    
+.dot {
+     width: 8px;
+     height: 8px;
+}
 
-    /* minian mobile */
-    #minian {height: 60vh;}
+/*    MINIAN    */
+#minian {height: 60vh;}
 
-    #afiche{
+
+/*     AFICHE     */
+#afiche{
         height: 70vh;
     }
 
-    #afiche article:nth-of-type(2){
-        width: 100%;
-        height: 60%;
-    }
-
-    /* afiche mobile */
-    #afiche article:nth-of-type(1){ height: 30%;}
-
-    /* ECO mobile */
-     #eco{grid-template-columns: repeat(1, 1fr);}
-
-    #eco article:nth-of-type(2){display: none;}
-                
-
-
-
-            /*       TIPOGRAFIA       */
-input{
-display: none;
+#afiche article:nth-of-type(2){
+    width: 100%;
+    height: 60%;
 }
+
+#afiche article:nth-of-type(1){ height: 30%;}
+
+/*    ECO    */
+#eco{grid-template-columns: repeat(1, 1fr);}
+
+#eco article:nth-of-type(2){display: none;}
+
+
+/*       TIPOGRAFIA       */
+input{display: none;}
 
 #ejemplos{
     height: 30vh;
@@ -710,13 +689,16 @@ display: none;
     height: 100%;
 }
 
-#ejemplos article:nth-of-type(1){
-    grid-column: span 2;
+#ejemplos article:nth-of-type(1){grid-column: span 2;}
+
+#ejemplos article:nth-of-type(2){ display: none;}
+
+#tipoinfo{
+    display: block;
+    margin: 20px 50px 40px 50px;
 }
 
-#ejemplos article:nth-of-type(2){
-    display: none;
-}
+#tipoinfo h2{color: rebeccapurple;}
 
 
 
@@ -752,19 +734,10 @@ display: none;
     color: palevioletred;
 }
 
-
-
-#tipoinfo{
-    display: block;
-    margin: 20px 50px 40px 50px;
-}
-#tipoinfo h2{
-    color: rebeccapurple;
-}
-
+/*       MONOGRAFIA       */
 #mono{ margin: 20px 50px 40px 50px;}
 
-
+/*       ELMATO       */
 #elmato{
     height: 20vh;
     width: 35vh;
@@ -775,6 +748,7 @@ display: none;
     height: 20vh;
 }
 
+/*       FOOTER       */
 footer h1{ font-size: 98%;}
 footer p {font-size: 80%;}
 
