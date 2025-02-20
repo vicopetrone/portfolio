@@ -406,6 +406,7 @@ footer{
     margin-top: 10px;
     justify-content: center;
     background-image: url(imagenes/azulejosblancospng.png);
+    background-size: cover;
     color: rgb(18, 55, 106);
     height: 15vh;
     display: flex;
@@ -438,8 +439,6 @@ footer article {
 }
 
     #indice {display: block;}
-
-    input {display: none;} 
         
     #indice a img{
         width: 60px;
@@ -521,6 +520,43 @@ footer article {
     }
                 
     #eco article:nth-of-type(3){display: none;}
+
+            /*       TIPOGRAFIA       */
+            input{
+                display: none;
+                }
+                
+                #ejemplos{
+                    margin-top: 30px;
+                    height: 50vh;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    align-items: center;
+                    margin: 20px 60px 0px 60px;
+                }
+                
+                #ejemplos article img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                #ejemplos article:nth-of-type(1){
+                    grid-column: span 1;
+                    grid-row: span 2;
+                }
+                #ejemplos article:nth-of-type(2){
+                    grid-column: span 1;
+                    grid-row: span 2;
+                }
+
+                #ejemplos h1{ font-size: 80%;}
+                #ejemplos h2{ font-size: 80%;}
+                #ejemplos h3{ font-size: 80%;}
+                #ejemplos p{ font-size: 80%;}
+                
+
+
     
     /*       TECNICAS       */
 #tecnicas{
@@ -563,23 +599,24 @@ footer article {
     height: 30vh;
 }
 
+footer{
+    margin-top: 30px;
+    justify-content: center;
+    background-image: url(imagenes/azulejosblancospng.png);
+
+    color: rgb(18, 55, 106);
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
+footer article {margin-top: 10px;}
 
+footer a {font-size: 90%;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -661,7 +698,6 @@ display: none;
 }
 
 #ejemplos{
-    margin-top: 30px;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -681,6 +717,8 @@ display: none;
 #ejemplos article:nth-of-type(2){
     display: none;
 }
+
+
 
 /*       TECNICAS       */
 #tecnicas{
@@ -737,24 +775,7 @@ display: none;
     height: 20vh;
 }
 
-
-footer{
-    margin-top: 30px;
-    justify-content: center;
-    background-image: url(imagenes/azulejosblancospng.png);
-    color: rgb(18, 55, 106);
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-footer article {margin-top: 10px;}
-
 footer h1{ font-size: 98%;}
 footer p {font-size: 80%;}
-
-footer a {font-size: 90%;}
 
 }
