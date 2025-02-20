@@ -558,7 +558,7 @@ header a{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(1,1fr);
-            margin: 20px 50px 40px 50px;
+            margin: 20px 50px 20px 50px;
             }
             
             #eco article:nth-of-type(2){
@@ -567,4 +567,62 @@ header a{
             #eco article:nth-of-type(3){
                 display: none;
             }
+
+            /*       TIPOGRAFIA       */
+input{
+    font-size: 50px;
+    width: 32vh;
+    height: 20vh;
+}
+
+
+#ejemplos{
+    margin-top: 30px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 50px 0px 50px;
+}
+
+#ejemplos article img{
+    width: 100%;
+    height: 100%;
+}
+
+#ejemplos article:nth-of-type(1){
+    grid-column: span 2;
+    display: none;
+}
+
+#ejemplos article:nth-of-type(2){
+    display: none;
+}
+
+/*       TECNICAS       */
+#tecnicas{
+    height: 80vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: 0px 50px 40px 50px;
+}
+
+#tecnicas img{
+    width: 88%;
+    height: 95%;
+}
+
+#tecnicas article{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#tecnicas article:nth-of-type(3){
+display: none;
+
+}
+
+
 }
