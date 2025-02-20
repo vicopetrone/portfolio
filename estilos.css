@@ -399,60 +399,6 @@ footer article {
 }
 
 
-.monografia {
-    position: relative;
-    max-width: 1400px;
-    margin: auto;
-    overflow: hidden;
-    height: 70vh;
-}
-
-.monografia-images {
-    display: flex;
-    width: 70%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.monografia-images img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.dots {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: gray;
-    border-radius: 50%;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.active { background: black; }
-
-
-
-
-
 /*       RESPONSIVA      */
 
 /* media para tablet */
@@ -570,11 +516,8 @@ header a{
 
             /*       TIPOGRAFIA       */
 input{
-    font-size: 50px;
-    width: 32vh;
-    height: 20vh;
+display: none;
 }
-
 
 #ejemplos{
     margin-top: 30px;
@@ -592,7 +535,6 @@ input{
 
 #ejemplos article:nth-of-type(1){
     grid-column: span 2;
-    display: none;
 }
 
 #ejemplos article:nth-of-type(2){
@@ -604,7 +546,7 @@ input{
     height: 80vh;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4,1fr);
-    margin: 0px 50px 40px 50px;
+    margin: 20px 50px 40px 50px;
 }
 
 #tecnicas img{
@@ -621,7 +563,44 @@ input{
 
 #tecnicas article:nth-of-type(3){
 display: none;
+}
 
+
+#elmato{
+    position: relative;
+    max-width: 768px;
+    margin: auto;
+    overflow: hidden;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+
+footer{
+    margin-top: 10px;
+    justify-content: center;
+    background-image: url(imagenes/azulejosblancospng.png);
+    color: rgb(18, 55, 106);
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+footer article {
+    margin-top: 10px;
+}
+
+footer h1{
+    font-size: 98%;
+}
+footer p{
+    font-size: 80%;
+}
+
+footer a{
+    font-size: 90%;
 }
 
 
