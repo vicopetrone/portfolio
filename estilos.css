@@ -36,6 +36,10 @@ text-decoration: none;
     transition: transform 0.8s ease-in-out;
 }
 
+#splash img:nth-of-type(2){
+    display: none;
+}
+
 .portada {
     width: 100%;
     max-width: 800px;
@@ -422,6 +426,20 @@ footer article {margin-top: 10px;}
 
 /* TABLET */
 @media all and (max-width:1023px){
+
+    #splash img:nth-of-type(1){
+        display: none;
+    }
+
+    #splash img:nth-of-type(2){
+        display: block;
+    }
+
+    .portada {
+        width: 100%;
+        max-width: 400px;
+    }
+
     header{
         padding: 1.2em;
         text-align: center;
@@ -614,6 +632,11 @@ footer a {font-size: 90%;}
 
 /*  MOBILE  */
 @media all and (max-width:767px){
+
+    .portada {
+        width: 100%;
+        max-width: 250px;
+    }
 
     /*       HEADER      */
 header{
