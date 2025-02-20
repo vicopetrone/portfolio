@@ -573,6 +573,9 @@ display: none;
     overflow: hidden;
     height: 30vh;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 
 
